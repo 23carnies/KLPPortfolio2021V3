@@ -30,7 +30,7 @@ export default function Home() {
       <GlobalStyle />
       <Layout theme={theme} setTheme={setTheme}>
         <Intro />
-        <Hero />
+        {/* <Hero /> */}
         <About />
         <LightningTalks />
         <Projects />
