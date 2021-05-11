@@ -17,8 +17,9 @@ const Header = ({ isMenuOpen, setIsMenuOpen, theme, setTheme }) => {
   return (
     <Head>
       <Nav>
-        <div>
+        <div style={{display: 'flex', alignItems:'center'}}>
           <Link to="/"><Img src={Logo} alt="KLP logo" /></Link>
+          <a href="/">Karen Lobin Perkins</a>
         </div>
         <List>
           <li>
@@ -59,7 +60,8 @@ const Head = styled.header`
 
 const Nav = styled.nav`
   ${Flex({ ai: 'center', jc: 'space-around' })};
-  background-color: ${props => props.theme.pageBackground};
+  background: transparent;
+  /* background-color: ${props => props.theme.pageBackground}; */
   /* height: 13vh; */
 `;
 
