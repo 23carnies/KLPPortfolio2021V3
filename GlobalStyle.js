@@ -30,23 +30,18 @@ a {
     color: inherit;
 }
 
-p,a,h1,h2,h3,h4,h5,h6 {
+h1,h2,h3,h4,h5,h6 {
   z-index: 10;
-  font-family: 'Josefin Sans', sans-serif;
+  font: 700 'Quicksand', Helvetica, sans-serif;
+  margin: 3rem 0 1.38rem;
+  line-height: 1.3;
   color: ${props => props.theme.fontColor};
   text-align: center;
 }
 p, a {
-  font-weight: 400;
-  line-height: 1.75;
-  margin-bottom: 1rem;
-}
-
-h1, h2, h3, h4, h5 {
-  font: 700 'Josefin Sans', Helvetica, sans-serif;
-  margin: 3rem 0 1.38rem;
+  font: 400 'Lato', Helvetica, sans-serif;
   line-height: 1.3;
-
+  /* margin-bottom: 1rem; */
 }
 
 h1 {
