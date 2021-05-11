@@ -19,8 +19,8 @@ const Layout = (props) => {
 
   return (
     <>
-      <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}  theme={theme} setTheme={setTheme} />
-      <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+      {/* <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}  theme={theme} setTheme={setTheme} />
+      <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
       <main>{children}</main>
       <Footer />
     </>
