@@ -2,11 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 import { Flex, text, below } from '../utilities';
 import { Section } from '../layouts/section';
+import { SubHeading } from '../elements/headings';
 
 const About = () => {
   return (
     <Section id="about">
       <Box>
+        {/* <div style={{display: 'flex',  jc:'center', fd:'column'}}> */}
+          <SubHeading>About</SubHeading>
+          <Hr/>
+        {/* </div> */}
           <AboutText>
             From my earliest memories, I’ve always loved to learn. I taught
             myself to play guitar and built a car from scratch with my father as
@@ -43,9 +48,14 @@ const Box = styled.div`
 `;
 
 const AboutText = styled.p`
-  font: ${text};
   max-width: 90%;
-  ${below.large`
+  /* ${below.large`
         font-size: 1.5rem;
-    `}
+    `} */
+`;
+
+const Hr = styled.hr`
+  margin-top: 10%;
+  border: 1px solid #ccc;
+  width: 65%;
 `;
