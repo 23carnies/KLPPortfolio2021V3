@@ -32,7 +32,7 @@ export const Close = () => {
 export const Hamburger = () => {
   return (
     <IconContext.Provider
-      value={{ size: '30px', color: '#b5d6b2' }}
+      value={{ size: '30px', color: 'white' }}
     >
       <GiHamburgerMenu />
     </IconContext.Provider>
@@ -41,19 +41,19 @@ export const Hamburger = () => {
 //Sun and Moon
 export const Sun = () => {
   return (
-    <IconContext.Provider value={{ size: '35px', color: `${props => props.theme.titleColor}` }}>
-      <IconCircle bkColor='yellow'>
+    <IconContext.Provider value={{ size: '30px', color: 'white' }}>
+      {/* <IconCircle bkColor='yellow'> */}
         <FiSun />
-      </IconCircle>
+      {/* </IconCircle> */}
     </IconContext.Provider>
   );
 };
 export const Moon = () => {
   return (
-    <IconContext.Provider value={{ size: '35px', color: `${props => props.theme.titleColor}` }}>
-      <IconCircle bkColor="moon">
+    <IconContext.Provider value={{ size: '30px', color: 'white' }}>
+      {/* <IconCircle bkColor="moon"> */}
         <BiMoon />
-      </IconCircle>
+      {/* </IconCircle> */}
     </IconContext.Provider>
   );
 };
@@ -99,7 +99,7 @@ export const LgMail = () => {
 export const ReactLogo = () => {
   return (
     <IconContext.Provider
-      value={{ size: '45px', color: 'black' }}>
+      value={{ size: '45px', color: 'white' }}>
       <FaReact />
     </IconContext.Provider>
   );
@@ -107,7 +107,7 @@ export const ReactLogo = () => {
 export const Css3 = () => {
   return (
     <IconContext.Provider
-      value={{ size: '45px', color: 'black' }}>
+      value={{ size: '45px', color: 'white' }}>
       <SiCss3 />
     </IconContext.Provider>
   );
@@ -115,7 +115,7 @@ export const Css3 = () => {
 export const W3c = () => {
   return (
     <IconContext.Provider
-      value={{ size: '45px', color: 'black' }}>
+      value={{ size: '45px', color: 'white' }}>
       <SiW3C />
     </IconContext.Provider>
   );
@@ -123,7 +123,7 @@ export const W3c = () => {
 export const JavaScript = () => {
   return (
     <IconContext.Provider
-      value={{ size: '45px', color: 'black' }}>
+      value={{ size: '45px', color: 'white' }}>
       <SiJavascript />
     </IconContext.Provider>
   );
@@ -131,7 +131,7 @@ export const JavaScript = () => {
 export const Dot = () => {
   return (
     <IconContext.Provider
-      value={{ size: '45px', color: 'black' }}>
+      value={{ size: '45px', color: 'white' }}>
       <BsDot />
     </IconContext.Provider>
   );
@@ -139,7 +139,7 @@ export const Dot = () => {
 export const StyledComponents = () => {
   return (
     <IconContext.Provider
-      value={{ size: '45px', color: 'black' }}>
+      value={{ size: '45px', color: 'white' }}>
       <SiStyledComponents />
     </IconContext.Provider>
   );
