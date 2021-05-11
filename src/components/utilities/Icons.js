@@ -7,10 +7,19 @@ import { BiMailSend } from '@react-icons/all-files/bi/BiMailSend';
 import { GiHamburgerMenu } from '@react-icons/all-files/gi/GiHamburgerMenu';
 import { BiMoon } from '@react-icons/all-files/bi/BiMoon';
 import { FiSun } from '@react-icons/all-files/fi/FiSun';
+import { FaReact } from '@react-icons/all-files/fa/FaReact'
+import { SiCss3 } from '@react-icons/all-files/si/SiCss3'
+import { SiW3C } from '@react-icons/all-files/si/SiW3C'
+import { SiJavascript } from '@react-icons/all-files/si/SiJavascript'
+import { SiStyledComponents } from '@react-icons/all-files/si/SiStyledComponents'
+import { SiGraphql } from '@react-icons/all-files/si/SiGraphql'
+import { BsDot } from '@react-icons/all-files/bs/BsDot'
+
 import { IconContext } from '@react-icons/all-files/';
 import { white, box_shadow2, Flex, below } from '../utilities';
 import styled, { css } from 'styled-components';
 
+//Hamburger and X
 export const Close = () => {
   return (
     <IconContext.Provider
@@ -20,7 +29,6 @@ export const Close = () => {
     </IconContext.Provider>
   );
 };
-
 export const Hamburger = () => {
   return (
     <IconContext.Provider
@@ -30,7 +38,7 @@ export const Hamburger = () => {
     </IconContext.Provider>
   );
 };
-
+//Sun and Moon
 export const Sun = () => {
   return (
     <IconContext.Provider value={{ size: '35px', color: `${props => props.theme.titleColor}` }}>
@@ -40,7 +48,6 @@ export const Sun = () => {
     </IconContext.Provider>
   );
 };
-
 export const Moon = () => {
   return (
     <IconContext.Provider value={{ size: '35px', color: `${props => props.theme.titleColor}` }}>
@@ -50,7 +57,7 @@ export const Moon = () => {
     </IconContext.Provider>
   );
 };
-
+// Links to 
 export const LgGithub = () => {
   return (
     <IconContext.Provider value={{ size: '45px', color: `${white}` }}>
@@ -60,7 +67,6 @@ export const LgGithub = () => {
     </IconContext.Provider>
   );
 };
-
 export const LgLinkedIn = () => {
   return (
     <IconContext.Provider value={{ size: '45px', color: `${white}` }}>
@@ -70,7 +76,6 @@ export const LgLinkedIn = () => {
     </IconContext.Provider>
   );
 };
-
 export const LgPDF = () => {
   return (
     <IconContext.Provider value={{ color: `${white}`, size: '45px' }}>
@@ -80,7 +85,6 @@ export const LgPDF = () => {
     </IconContext.Provider>
   );
 };
-
 export const LgMail = () => {
   return (
     <IconContext.Provider value={{ size: '45px', color: `${white}` }}>
@@ -91,7 +95,63 @@ export const LgMail = () => {
   );
 };
 
-// const Circle = ({ ...style }) => <div style={style}></div>
+// Developer Icons
+export const ReactLogo = () => {
+  return (
+    <IconContext.Provider
+      value={{ size: '45px', color: 'black' }}>
+      <FaReact />
+    </IconContext.Provider>
+  );
+};
+export const Css3 = () => {
+  return (
+    <IconContext.Provider
+      value={{ size: '45px', color: 'black' }}>
+      <SiCss3 />
+    </IconContext.Provider>
+  );
+};
+export const W3c = () => {
+  return (
+    <IconContext.Provider
+      value={{ size: '45px', color: 'black' }}>
+      <SiW3C />
+    </IconContext.Provider>
+  );
+};
+export const JavaScript = () => {
+  return (
+    <IconContext.Provider
+      value={{ size: '45px', color: 'black' }}>
+      <SiJavascript />
+    </IconContext.Provider>
+  );
+};
+export const Dot = () => {
+  return (
+    <IconContext.Provider
+      value={{ size: '45px', color: 'black' }}>
+      <BsDot />
+    </IconContext.Provider>
+  );
+};
+export const StyledComponents = () => {
+  return (
+    <IconContext.Provider
+      value={{ size: '45px', color: 'black' }}>
+      <SiStyledComponents />
+    </IconContext.Provider>
+  );
+};
+export const GraphQL = () => {
+  return (
+    <IconContext.Provider
+      value={{ size: '45px', color: 'black' }}>
+      <SiGraphql />
+    </IconContext.Provider>
+  );
+};
 
 export const IconCircle = styled.div`
   background: ${({ bkColor }) =>
