@@ -15,7 +15,7 @@ body {
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Josefin Sans', Helvetica, sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   font-weight: normal;
   background-color: ${props => props.theme.componentBackground};
   font-kerning: normal;
