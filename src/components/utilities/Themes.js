@@ -11,8 +11,8 @@ export const darkTheme = {
 
 export const lightTheme = {
   pageBackground: '#5a464c',
-  componentBackground: '#ffefbd',
-  titleColor: '#2e2327',
+  componentBackground: '#E5E5E5',
+  titleColor: '#3D3D3D',
   tagLineColor: '#53131e',
   fontColor: '#051126',
   button: '#ADA4B5',
