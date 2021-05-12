@@ -1,5 +1,6 @@
 ---
 title: 't.ux'
+sub: 'Large Scale Front End Development'
 tech: 
   - React.js
   - Styled Components

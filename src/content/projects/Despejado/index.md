@@ -1,5 +1,6 @@
 ---
 title: 'Despejado'
+sub: 'Single page application in React'
 tech: 
   - React.js
   - Sass/SCSS

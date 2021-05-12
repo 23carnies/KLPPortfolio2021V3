@@ -1,5 +1,6 @@
 ---
 title: 'Meet Your Maker'
+sub: 'Full CRUD application'
 tech: 
   - React.js
   - Node.js

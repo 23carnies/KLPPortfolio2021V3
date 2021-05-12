@@ -1,5 +1,6 @@
 ---
 title: 'bilingüe'
+sub: 'Full CRUD application'
 tech: 
   - Django
   - Python
