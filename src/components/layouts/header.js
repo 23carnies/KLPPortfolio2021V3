@@ -23,21 +23,22 @@ const Header = ({ isMenuOpen, setIsMenuOpen, theme, setTheme }) => {
         </div>
         <List>
           <li>
-            <Link to="/#about">About</Link>
+            <NavItem to="/#about">About</NavItem>
           </li>
           <li>
-            <Link to="/#projects">Projects</Link>
+            <NavItem to="/#projects">Projects</NavItem>
           </li>
           <li>
-            <Link to="/#talks">Talks</Link>
+            <NavItem to="/#talks">Talks</NavItem>
           </li>
           <li>
-            <Link to="/#contact">Contact</Link>
+            <NavItem to="/#contact">Contact</NavItem>
+          </li>
+          <li>
+            <NavItem href="/resume.pdf">Résumé</NavItem>
           </li>
         </List>
-        <div>
-          <Resume href="/resume.pdf">Résumé</Resume>
-        </div>
+  
         <ToggleBtn onClick={toggleTheme} aria-hidden="true">
           {theme === 'light' ? <Moon aria-hidden="true" /> : <Sun aria-hidden="true" />}
         </ToggleBtn>
@@ -66,7 +67,7 @@ const Nav = styled.nav`
 `;
 
 const Img = styled.img`
-  width: 100px;
+  width: 60px;
   border-radius: 50%;
 `;
 
@@ -78,16 +79,21 @@ const List = styled.ul`
 
   li {
     list-style-type: none;
+    border-right: 2px solid white;
   }
 
   a {
     font: 600 24px 'Quicksand', sans-serif;
-    color: ${props => props.theme.fontColor};
+    color: white;
     padding: 0 18px;
     & :hover {
       border-bottom: 3px solid ${props => props.theme.tagLineColor};
     }
   }
+`;
+
+const NavItem = styled(Link)`
+  color: white;
 `;
 
 const Resume = styled.a`
