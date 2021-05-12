@@ -1,37 +1,39 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Flex, below } from '../utilities';
-import { LgGithub, LgLinkedIn, LgPDF } from '../utilities/Icons';
+import { Dot, LgGithub, LgLinkedIn, LgPDF } from '../utilities/Icons';
 
 const Footer = () => {
 
   return (
     <Foot>
       <FootDiv>
-        <a
+        <LinkItem
           rel="noreferrer"
           target="_blank"
           href="https://github.com/23carnies"
           aria-label="Github logo, opens new window to Karen's Github page"
         >
           <LgGithub />
-        </a>
-        <a
+        </LinkItem>
+        <Dot />
+        <LinkItem
           rel="noreferrer"
           target="_blank"
           href="https://www.linkedin.com/in/karen-lobin-perkins/"
           aria-label="LinkedIn logo, opens new window to Karen's LinkedIn page"
         >
           <LgLinkedIn />
-        </a>
-        <a
+        </LinkItem>
+        <Dot />
+        <LinkItem
           rel="noreferrer"
           target="_blank"
           href="http://23carnies.com/karenLobinPerkinsRes.pdf"
           aria-label="link to Karen's resume in pdf format, opens new window"
         >
           <LgPDF />
-        </a>
+        </LinkItem>
       </FootDiv>
       <FootP>
         © {new Date().getFullYear()} Karen Lobin Perkins
@@ -55,11 +57,15 @@ const Foot = styled.footer`
 `;
 
 const FootDiv = styled.div`
-  margin-top: 10px;
+  padding-left: 5%;
   ${Flex({ jc: 'center' })};
   ${below.small`
     margin: 0 auto;
   `}
+`;
+
+const LinkItem = styled.a`
+  margin: 18% 0 10%;
 `;
 
 const FootP = styled.p`
