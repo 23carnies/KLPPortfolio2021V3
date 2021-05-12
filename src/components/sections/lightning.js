@@ -2,8 +2,9 @@ import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 import LightningCard from '../layouts/cards/lightningCard';
 import { Section } from '../layouts/section';
-import { SubLine, CardGroup } from '../sections/projects';
-import { Headline } from '../elements/headings';
+import { SubLine, CardGroup, Note } from '../sections/projects';
+import { SubHeading } from '../elements';
+import styled from 'styled-components';
 
 const LightningTalks = () => {
   const data = useStaticQuery(graphql`
@@ -31,8 +32,9 @@ const LightningTalks = () => {
  
  return (
     <Section id="talks">
-        <Headline>Lightning Talks</Headline>
-        <SubLine>Short video presenations on topics I'm learning more about.</SubLine>
+        <Hr />
+        <SubHeading>Talks</SubHeading>
+        <Note>Short presentations to teach designers and fellow engineers about topics I'm currently learning.</Note>
         <CardGroup>
             {talks && talks.map(({ node }, idx) => {
                 const { excerpt, frontmatter } = node;
@@ -55,3 +57,9 @@ const LightningTalks = () => {
 };
 
 export default LightningTalks;
+
+const Hr = styled.hr`
+    /* margin-top: 10%; */
+    border: 1px solid #ccc;
+    width: 90%;
+`;
