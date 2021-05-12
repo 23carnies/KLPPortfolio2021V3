@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import ProjectCard from '../layouts/cards/projectCard';
 import { Section } from '../layouts/section';
 import { Flex, title, below, text } from '../utilities';
-import { Headline } from '../elements/headings';
+import { Headline, SubHeading } from '../elements/headings';
 
 const Projects = () => {
   const data = useStaticQuery(graphql`
@@ -18,6 +18,7 @@ const Projects = () => {
               image
               info
               openLink
+              sub
               tech
               title
             }
@@ -32,8 +33,9 @@ const Projects = () => {
 
   return (
     <Section id="projects">
-      <Headline>My work</Headline>
-      <SubLine>Click card for more info</SubLine>
+      <Hr />
+      <SubHeading>Projects</SubHeading>
+      <p>Click card for more info</p>
       <Note>
         Some projects are hosted on heroku and may take several seconds to load.
       </Note>
@@ -47,6 +49,7 @@ const Projects = () => {
               image,
               info,
               openLink,
+              sub,
               tech,
               title,
             } = frontmatter;
@@ -54,6 +57,7 @@ const Projects = () => {
               <ProjectCard
                 key={idx}
                 title={title}
+                sub={sub}
                 description={excerpt}
                 image={image}
                 openLink={openLink}
@@ -74,12 +78,12 @@ export const SubLine = styled.p`
   margin: 0;
   font-size: 1.5rem;
   color: ${props => props.theme.tagLineColor};
-  /* font-family: ${title}; */
 `;
 
-const Note = styled.p`
-  font-size: 1.3rem;
-  padding: 0 3%;
+export const Note = styled.p`
+  font-size: 1rem;
+  text-align: center;
+  padding: 0 2%;
 `;
 
 export const CardGroup = styled.section`
@@ -88,4 +92,9 @@ export const CardGroup = styled.section`
   ${below.xLarge`
         max-width: 1280px;
     `}
+`;
+
+const Hr = styled.hr`
+    border: 1px solid #ccc;
+    width: 95%;
 `;
