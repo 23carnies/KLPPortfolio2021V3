@@ -38,13 +38,14 @@ const Card = styled.div`
 `;
 
 const Video = styled.iframe`
+  aspect-ratio: 4/3;
   width: 560px;
-  height: 315px;
+  /* height: 315px; */
   border: none;
   border-radius: 12px 12px 0 0;
   ${below.xSmall`
       width: 400px;
-      height: 300px;
+      // height: 300px;
     `}
   ${below.xXSmall`
       width: 360px;
