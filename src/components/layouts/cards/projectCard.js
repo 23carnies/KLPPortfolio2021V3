@@ -7,6 +7,7 @@ import { Flex, below, box_shadow4 } from '../../utilities';
 
 const ProjectCard = ({
   title,
+  sub,
   description,
   image,
   openLink,
@@ -33,6 +34,7 @@ const ProjectCard = ({
         <CardFront>
           <Image src={image} alt={alt} />
           <HTwo>{title}</HTwo>
+          <HThree>{sub}</HThree>
         </CardFront>
       </animated.div>
 
@@ -73,10 +75,10 @@ export const CardFront = styled.div`
   ${Flex({ fd: 'column' })};
   margin: 20px;
   padding: 20px;
-  width: 370px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   border: 1px solid ${props => props.theme.titleColor};
-  border-radius: 70px 3px 70px 3px;
+  /* border-radius: 70px 3px 70px 3px; */
   background: linear-gradient(
     to top,
     ${props => props.theme.gradient1} 2%,
@@ -84,20 +86,20 @@ export const CardFront = styled.div`
   );
   box-shadow: ${box_shadow4};
   color: ${props => props.theme.fontColor};
-  ${below.small`
+  /* ${below.small`
         width: 330px;
     `}
   ${below.xXSmall`
         width: 300px;
-    `}
+    `} */
 `;
 
 export const CardBack = styled(CardFront)`
-  border-radius: 3px 70px 3px 70px;
+  /* border-radius: 3px 70px 3px 70px; */
 `;
 
 export const Image = styled.img`
-  max-width: 225px;
+  max-width: 175px;
   border: 1px solid ${props => props.theme.fontColor};
   border-radius: 5px;
 `;
@@ -110,9 +112,13 @@ export const Pgraph = styled.p`
 `;
 
 export const HTwo = styled.h2`
-  font: 700 30px 'Roboto Mono', monospace;
-  text-align: center;
-  line-height: 54px;
+  font: 700 20px 'Roboto Mono', monospace;
+  /* text-align: center; */
+  /* line-height: 54px; */
   margin: 5px;
   color: ${props => props.theme.fontColor};
+`;
+
+export const HThree = styled.h3`
+  font: 400 18px 'Lato', Helvetica, sans-serif;
 `;
