@@ -61,27 +61,27 @@ export const Moon = () => {
 export const LgGithub = () => {
   return (
     <IconContext.Provider value={{ size: '45px', color: `${white}` }}>
-      <IconCircle bkColor="git">
+      {/* <IconCircle bkColor="git"> */}
         <FiGithub />
-      </IconCircle>
+      {/* </IconCircle> */}
     </IconContext.Provider>
   );
 };
 export const LgLinkedIn = () => {
   return (
     <IconContext.Provider value={{ size: '45px', color: `${white}` }}>
-      <IconCircle bkColor="link">
+      {/* <IconCircle bkColor="link"> */}
         <AiOutlineLinkedin />
-      </IconCircle>
+      {/* </IconCircle> */}
     </IconContext.Provider>
   );
 };
 export const LgPDF = () => {
   return (
     <IconContext.Provider value={{ color: `${white}`, size: '45px' }}>
-      <IconCircle bkColor="res">
+      {/* <IconCircle bkColor="res"> */}
         <FaRegFilePdf />
-      </IconCircle>
+      {/* </IconCircle> */}
     </IconContext.Provider>
   );
 };
