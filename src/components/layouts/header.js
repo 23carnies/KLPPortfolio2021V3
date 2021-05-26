@@ -62,8 +62,15 @@ const Head = styled.header`
 const Nav = styled.nav`
   ${Flex({ ai: 'center', jc: 'space-around' })};
   background: transparent;
-  /* background-color: ${props => props.theme.pageBackground}; */
-  /* height: 13vh; */
+  
+  a {
+    font: 600 24px 'Quicksand', sans-serif;
+    color: white;
+    padding: 0 18px;
+    & :hover {
+      border-bottom: 3px solid ${props => props.theme.tagLineColor};
+    }
+  }
 `;
 
 const Img = styled.img`
@@ -82,14 +89,6 @@ const List = styled.ul`
     border-right: 2px solid white;
   }
 
-  a {
-    font: 600 24px 'Quicksand', sans-serif;
-    color: white;
-    padding: 0 18px;
-    & :hover {
-      border-bottom: 3px solid ${props => props.theme.tagLineColor};
-    }
-  }
 `;
 
 const NavItem = styled(Link)`
