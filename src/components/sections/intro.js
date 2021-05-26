@@ -12,68 +12,72 @@ const Intro = () => {
   return (
     <SectionIntro>
       <Header />
-      {/* <Image src={Iceland} alt="Karen in Iceland" /> */}
-      <TextBox>
-        <Headline>Hi! I'm Karen</Headline>
-        <SubHeadLine>
-          I am a software engineer based in Atlanta, focused on Front End design
-          in ReactJS, useability, and accessability.
-        </SubHeadLine>
-      </TextBox>
-      <button>See My Work</button>
-      <div>
-        <ReactLogo/>
-        <Dot />
-        <Css3 />
-        <Dot />
-        <W3c />
-        <Dot />
-        <JavaScript />
-        <Dot />
-        <StyledComponents />
-
-      </div>
+        <TextBox>
+          <Headline>Hi! I'm Karen</Headline>
+          <SubHeadLine>
+            I am a software engineer based in Atlanta, focused on Front End design
+            in <b>ReactJS</b>, <b>useability</b>, and <b>accessability</b>.
+          </SubHeadLine>
+        <See href="/projects">See My Work</See>
+        </TextBox>
+        <LogosBox>
+          <ReactLogo/>
+          <Dot />
+          <Css3 />
+          <Dot />
+          <W3c />
+          <Dot />
+          <JavaScript />
+          <Dot />
+          <StyledComponents />
+        </LogosBox>
     </SectionIntro>
   );
 };
 
 export default Intro;
 
-const Headline = styled(Heading)`
-  color: white;
-  text-align: right;
-`;
-const SubHeadLine = styled(SubHeading)`
-  color: white;
-  text-align: right;
-`;
-
 const SectionIntro = styled(Section)`
-  background-image: url(${Iceland});
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  width: 100vw;
+  background: radial-gradient(101.23% 226.86% at 105.57% 106.78%, rgba(183, 0, 139, 0.34) 10.42%, rgba(160, 22, 168, 0.958021) 84.25%), linear-gradient(123.03deg, rgba(255, 202, 67, 0.6) 6.71%, rgba(255, 211, 97, 0) 52.29%), #E76F2B;
+  mix-blend-mode: multiply;
   ${Flex({fd:'column'})};
   border-bottom: 10px solid ${props => props.theme.tagLineColor};
   padding-bottom: 2%;
   ${below.small`
-    ${Flex({fd:'column'})};
+    ${Flex({fd:'column', ai:'flex-end'})};
   `}
 `;
 
-// const Image = styled.img`
-//   border-radius: 60%;
-//   width: 30%;
-//   margin: 1%;
-//   border: 2px inset ${props => props.theme.pageBackground};
-//   ${below.small`
-//     width: 80%;
-//     margin: 5% 0;
-//   `}
-// `;
+const See = styled.a`
+  color: white;
+  text-align: center;
+  padding: 1%;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 1% 2%;
+  margin: 1% 0 2%;
+`;
+
+const Headline = styled(Heading)`
+  color: white;
+  font-weight: 700;
+  text-align: left;
+  
+  
+`;
+const SubHeadLine = styled(SubHeading)`
+  font-weight: 400;
+  color: white;
+  text-align: left;
+  padding: 0;
+  ${below.small`
+
+  `}
+`;
 
 const TextBox = styled.div`
-  width: 50%;
+  width: 90%;
   padding: 2%;
   ${below.small`
     width: 80%;
@@ -81,4 +85,11 @@ const TextBox = styled.div`
   `}
 `;
 
-
+const LogosBox = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2% 1%;
+  margin: 2% auto;
+  max-width: 80%;
+`;

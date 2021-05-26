@@ -53,7 +53,7 @@ const Header = ({ isMenuOpen, setIsMenuOpen, theme, setTheme }) => {
 export default Header;
 
 const Head = styled.header`
-  position: sticky;
+  /* position: sticky; */
   top: 0;
   width: 100%;
   z-index: 15;

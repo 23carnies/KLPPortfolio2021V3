@@ -5,6 +5,7 @@ export const Heading = styled.h1`
   color: ${props => props.theme.titleColor};
   font: 700 2.5rem 'Quicksand', sans-serif;
   ${below.small`
+    font-size: 2rem;
     line-height: 1rem;
     margin: 1rem 0;
   `}
@@ -15,6 +16,9 @@ export const SubHeading = styled.h2`
   font: 700 28px 'Quicksand', sans-serif;
   line-height: 1.4;
   padding: 0 3%;
+  ${below.small`
+    font-size: 24px;
+  `}
 `;
 
 export const Headline = styled.h3`
