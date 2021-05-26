@@ -1,9 +1,15 @@
 import styled from 'styled-components';
-import { below } from '../utilities';
+import { below, above } from '../utilities';
 
 export const Heading = styled.h1`
   color: ${props => props.theme.titleColor};
-  font: 700 2.5rem 'Quicksand', sans-serif;
+  font: 700 3.5rem 'Quicksand', sans-serif;
+  ${above.large`
+    font-size: 4.5rem;
+    `}
+  /* ${above.xSmall`
+    font-size: 4.5rem;
+    `} */
   ${below.small`
     font-size: 2rem;
     line-height: 1rem;

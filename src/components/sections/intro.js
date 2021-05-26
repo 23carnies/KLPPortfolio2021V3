@@ -77,6 +77,7 @@ const SubHeadLine = styled(SubHeading)`
 `;
 
 const TextBox = styled.div`
+  margin: 0 auto;
   width: 90%;
   padding: 2%;
   ${below.small`
