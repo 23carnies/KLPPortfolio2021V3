@@ -33,7 +33,6 @@ a {
 h1,h2,h3,h4,h5,h6 {
   z-index: 10;
   font: 700 'Quicksand', Helvetica, sans-serif;
-  margin: 3rem 0 1.38rem;
   line-height: 1.3;
   color: ${props => props.theme.fontColor};
   text-align: center;
@@ -45,6 +44,7 @@ p, a {
 }
 
 h1 {
+  margin: 3rem 0 1.38rem;
   margin-top: 0;
   font-size: 7.6rem;
 }

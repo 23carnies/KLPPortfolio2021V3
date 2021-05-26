@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@fontsource/josefin-sans": "^4.2.2",
+    "@fontsource/lato": "^4.3.0",
     "@fontsource/quicksand": "^4.2.2",
     "@fontsource/rock-salt": "^4.2.2",
     "@react-icons/all-files": "^4.1.0",
