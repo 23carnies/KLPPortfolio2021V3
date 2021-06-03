@@ -35,7 +35,7 @@ const Projects = () => {
     <Section id="projects">
       <Hr />
       <SubHeading>Projects</SubHeading>
-      <p>Click card for more info</p>
+      <Note>Click card for more info</Note>
       <Note>
         Some projects are hosted on heroku and may take several seconds to load.
       </Note>
@@ -78,6 +78,7 @@ export const Note = styled.p`
   font-size: 1rem;
   text-align: center;
   padding: 0 2%;
+  margin: 0.5%;
 `;
 
 export const CardGroup = styled.section`
