@@ -18,7 +18,7 @@ export const Heading = styled.h1`
 `;
 
 export const SubHeading = styled.h2`
-  color: ${pinkBlack};
+  color: ${pink};
   font: 700 28px 'Quicksand', sans-serif;
   line-height: 1.4;
   padding: 0 3%;
