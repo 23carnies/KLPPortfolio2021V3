@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { Btn } from '../../elements/buttons';
 
-import { Flex, below, box_shadow4, grey, pinkBlack, white, darkGrey } from '../../utilities';
+import { Flex, below, grey, pinkBlack, white, darkGrey, background } from '../../utilities';
 
 const ProjectCard = ({
   title,
@@ -73,15 +73,16 @@ export default ProjectCard;
 
 export const CardFront = styled.div`
   ${Flex({ fd: 'column' })};
-  margin: 20px;
-  padding: 20px;
-  width: 300px;
-  height: 300px;
-  border: 1px solid ${pinkBlack};
+  margin: 3%;
+  width: 500px;
+  height: 500px;
+  border: 1px inset ${grey};
+  border-radius: 5px;
   background: ${grey};
-  box-shadow: ${box_shadow4};
-  
-
+  ${below.small`
+    width: 400px;
+    height: 400px;
+  `}
 `;
 
 export const CardBack = styled(CardFront)`
@@ -89,8 +90,7 @@ export const CardBack = styled(CardFront)`
 `;
 
 export const Image = styled.img`
-  max-width: 175px;
-  border: 1px solid ${white};
+  width: 85%;
   border-radius: 5px;
 `;
 
@@ -110,4 +110,5 @@ export const HTwo = styled.h2`
 
 export const HThree = styled.h3`
   font: 400 18px 'Lato', Helvetica, sans-serif;
+  margin: 0;
 `;
