@@ -83,10 +83,13 @@ export const Note = styled.p`
 
 export const CardGroup = styled.section`
   ${Flex({ fw: 'wrap' })};
-  max-width: 1400px;
+  width: 1400px;
   ${below.xLarge`
-        max-width: 1280px;
-    `}
+      width: 1180px;
+  `}
+  ${below.medium`
+      width: 700px;
+  `}
 `;
 
 const Hr = styled.hr`
