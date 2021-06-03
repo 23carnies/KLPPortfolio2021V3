@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import React from 'react';
 import LightningCard from '../layouts/cards/lightningCard';
 import { Section } from '../layouts/section';
-import { SubLine, CardGroup, Note } from '../sections/projects';
+import { CardGroup, Note } from '../sections/projects';
 import { SubHeading } from '../elements';
 import styled from 'styled-components';
 

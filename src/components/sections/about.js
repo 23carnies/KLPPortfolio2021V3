@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flex, text, below } from '../utilities';
+import { Flex, text, below, darkGrey } from '../utilities';
 import { Section } from '../layouts/section';
 import { SubHeading } from '../elements';
 import Iceland from '../../images/klo-iceland.jpg';
@@ -63,7 +63,7 @@ const Img = styled.img`
   width: 50%;
   max-width: 500px;
   border-radius: 50%;
-  border: 1px solid ${props => props.theme.fontColor};
+  border: 1px solid ${darkGrey};
   margin: 2% 2% 2% 5%;
   ${below.xLarge`
     margin: 1% 1% 1% 3%;

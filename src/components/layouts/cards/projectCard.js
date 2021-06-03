@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 import styled from 'styled-components';
 import { Btn } from '../../elements/buttons';
 
-import { Flex, below, box_shadow4 } from '../../utilities';
+import { Flex, below, box_shadow4, grey, pinkBlack, white, darkGrey } from '../../utilities';
 
 const ProjectCard = ({
   title,
@@ -77,30 +77,20 @@ export const CardFront = styled.div`
   padding: 20px;
   width: 300px;
   height: 300px;
-  border: 1px solid ${props => props.theme.titleColor};
-  /* border-radius: 70px 3px 70px 3px; */
-  background: linear-gradient(
-    to top,
-    ${props => props.theme.gradient1} 2%,
-    ${props => props.theme.gradient2} 100%
-  );
+  border: 1px solid ${pinkBlack};
+  background: ${grey};
   box-shadow: ${box_shadow4};
-  color: ${props => props.theme.fontColor};
-  /* ${below.small`
-        width: 330px;
-    `}
-  ${below.xXSmall`
-        width: 300px;
-    `} */
+  
+
 `;
 
 export const CardBack = styled(CardFront)`
-  /* border-radius: 3px 70px 3px 70px; */
+
 `;
 
 export const Image = styled.img`
   max-width: 175px;
-  border: 1px solid ${props => props.theme.fontColor};
+  border: 1px solid ${white};
   border-radius: 5px;
 `;
 
@@ -109,14 +99,13 @@ export const Pgraph = styled.p`
   text-align: center;
   line-height: 24px;
   margin: 30px 5px 5px;
+  color: ${darkGrey};
 `;
 
 export const HTwo = styled.h2`
   font: 700 20px 'Roboto Mono', monospace;
-  /* text-align: center; */
-  /* line-height: 54px; */
   margin: 5px;
-  color: ${props => props.theme.fontColor};
+  color: ${pinkBlack};
 `;
 
 export const HThree = styled.h3`

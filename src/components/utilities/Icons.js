@@ -23,7 +23,7 @@ import styled, { css } from 'styled-components';
 export const Close = () => {
   return (
     <IconContext.Provider
-      value={{ size: '30px', color: `${props => props.theme.fontColor}` }}
+      value={{ size: '30px', color: `${white}` }}
     >
       <AiOutlineClose />
     </IconContext.Provider>

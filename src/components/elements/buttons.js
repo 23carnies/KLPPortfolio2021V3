@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { box_shadow1, box_shadow4 } from '../utilities';
+import { box_shadow1, box_shadow4, pink, white, pinkBlack } from '../utilities';
 
 export const Btn = styled.a`
   width: 100px;
@@ -7,17 +7,16 @@ export const Btn = styled.a`
   margin: 10px;
   padding: 10px 20px;
   box-shadow: ${box_shadow4};
-  border: 1px solid ${props => props.theme.titleColor};
+  border: 1px solid ${white};
   border-radius: 5px;
   font-weight: bold;
-  cursor: pointer;
+  
 
-  color: ${props => props.theme.fontColor};
-  background: ${props => props.theme.button};
+  color: ${white};
+  background: ${pink};
 
   &:hover {
-    color: ${props => props.theme.pageBackground};
-    background: ${props => props.theme.button};
+    background: ${pinkBlack};
     box-shadow: ${box_shadow1};
   }
   transition: all 0.4s ease;

@@ -74,12 +74,6 @@ const Projects = () => {
 
 export default Projects;
 
-export const SubLine = styled.p`
-  margin: 0;
-  font-size: 1.5rem;
-  color: ${props => props.theme.tagLineColor};
-`;
-
 export const Note = styled.p`
   font-size: 1rem;
   text-align: center;

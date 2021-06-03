@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flex, below } from '../../utilities';
+import { Flex, below, pinkBlack, darkGrey } from '../../utilities';
 import { HTwo, Pgraph } from './projectCard';
 
 const LightningCard = ({ title, link, image, alt, description, video }) => {
@@ -27,11 +27,12 @@ const Card = styled.div`
   ${Flex({ fd: 'column' })};
   width: 560px;
   border-radius: 12px;
-  background: ${props => props.theme.gradient2};
   margin: 25px;
-  border: 1px solid ${props => props.theme.titleColor} ${below.xSmall`
+  border: 1px solid ${pinkBlack};
+  ${below.xSmall`
       width: 400px;
-    `} ${below.xXSmall`
+    `}
+  ${below.xXSmall`
       width: 360px;
 
     `};
@@ -54,7 +55,7 @@ const Video = styled.iframe`
 `;
 
 const CardBody = styled.div`
-  background-color: ${props => props.theme.componentBackground};
+  background-color: ${darkGrey};
   height: 220px;
   ${below.small`
       height: 200px;

@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import { Close } from '../utilities/Icons';
 import { useSpring, animated } from 'react-spring';
 import './menu.css';
+import { darkGrey, pink, pinkGrey, white } from '../utilities';
 
 const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
   const menuAnime = useSpring({
@@ -51,8 +52,8 @@ export default Menu;
 
 const NavWrapper = styled.div`
 
-    background: ${props => props.theme.pageBackground};
-    color: ${props => props.theme.fontColor};
+    background: ${white};
+    color: ${white};
 `;
 
 const CloseBtn = styled.button`
@@ -70,10 +71,10 @@ export const NavItem = styled(Link)`
   font: 36px 'Quicksand', sans-serif;
   padding: 15px 0;
   margin: 80px auto;
-  color: ${props => props.theme.titleColor};
+  color: ${darkGrey};
 
   & :hover {
-    border-bottom: 3px solid ${props => props.theme.tagLineColor};
+    border-bottom: 3px solid ${pink}
   }
 `;
 

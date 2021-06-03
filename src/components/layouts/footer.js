@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Flex, below } from '../utilities';
+import { Flex, below, white } from '../utilities';
 import { Dot, LgGithub, LgLinkedIn, LgPDF } from '../utilities/Icons';
 
 const Footer = () => {
@@ -69,7 +69,7 @@ const LinkItem = styled.a`
 `;
 
 const FootP = styled.p`
-  color: ${props => props.theme.fontColor};
+  color: ${white};
   margin: 50px 30px 0 auto;
   ${below.medium`
       font-size: .7rem;

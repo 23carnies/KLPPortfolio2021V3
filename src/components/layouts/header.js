@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { above, below, Flex } from '../utilities';
+import { above, below, Flex, pink, pinkBlack, white } from '../utilities';
 import Logo from '../../images/clearLogo.png';
 import { Hamburger } from '../utilities/Icons';
 import { ToggleBtn } from '../elements/buttons';
@@ -45,7 +45,6 @@ const Header = ({ setIsMenuOpen, isMenuOpen }) => {
 export default Header;
 
 const Head = styled.header`
-  /* position: sticky; */
   top: 0;
   width: 100%;
   z-index: 15;
@@ -53,8 +52,6 @@ const Head = styled.header`
 
 const Nav = styled.nav`
   ${Flex({ ai: 'center', jc: 'space-around' })};
-  /* background-color: ${props => props.theme.pageBackground}; */
-  /* height: 13vh; */
 `;
 
 const Img = styled.img`
@@ -74,21 +71,21 @@ const List = styled.ul`
 
   a {
     font: 600 24px 'Quicksand', sans-serif;
-    color: ${props => props.theme.fontColor};
+    color: ${white};
     padding: 0 18px;
     & :hover {
-      border-bottom: 3px solid ${props => props.theme.tagLineColor};
+      border-bottom: 3px solid ${pink};
     }
   }
 `;
 
 const Resume = styled.a`
   font: 600 24px 'Quicksand', sans-serif;
-  color: ${props => props.theme.fontColor};
+  color: ${white};
   padding: 0 18px;
 
   & :hover {
-    border-bottom: 3px solid ${props => props.theme.tagLineColor};
+    border-bottom: 3px solid ${white};
   }
 `;
 
