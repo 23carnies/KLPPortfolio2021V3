@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { pinkBlack, white } from './src/components/utilities';
 
 const GlobalStyle = createGlobalStyle`
 
@@ -17,7 +18,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Lato', Helvetica, sans-serif;
   font-weight: normal;
-  background-color: ${props => props.theme.componentBackground};
+  background-color: ${white};
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -34,7 +35,7 @@ h1,h2,h3,h4,h5,h6 {
   z-index: 10;
   font: 700 'Quicksand', Helvetica, sans-serif;
   line-height: 1.3;
-  color: ${props => props.theme.fontColor};
+  color: ${pinkBlack};
   text-align: center;
 }
 p, a {
