@@ -9,41 +9,33 @@ import { Sun, Moon } from '../utilities/Icons';
 
 
 
-const Header = ({ isMenuOpen, setIsMenuOpen, theme, setTheme }) => {
-  const toggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-
+const Header = ({ setIsMenuOpen, isMenuOpen }) => {
 
   return (
     <Head>
       <Nav>
-        <div style={{display: 'flex', alignItems:'center'}}>
+        <div>
           <Link to="/"><Img src={Logo} alt="KLP logo" /></Link>
-          <a href="/">Karen Lobin Perkins</a>
         </div>
         <List>
           <li>
-            <NavItem to="/#about">About</NavItem>
+            <Link to="/#about">About</Link>
           </li>
           <li>
-            <NavItem to="/#projects">Projects</NavItem>
+            <Link to="/#projects">Projects</Link>
           </li>
           <li>
-            <NavItem to="/#talks">Talks</NavItem>
+            <Link to="/#talks">Talks</Link>
           </li>
           <li>
-            <NavItem to="/#contact">Contact</NavItem>
-          </li>
-          <li>
-            <NavItem href="/resume.pdf">Résumé</NavItem>
+            <Link to="/#contact">Contact</Link>
           </li>
         </List>
-  
-        <ToggleBtn onClick={toggleTheme} aria-hidden="true">
-          {theme === 'light' ? <Moon aria-hidden="true" /> : <Sun aria-hidden="true" />}
-        </ToggleBtn>
         <div>
-          <HamBtn onClick={toggleMenu} onKeyDown={toggleMenu} aria-label="Open Menu"><Hamburger /></HamBtn>
+          <Resume href="/resume.pdf">Résumé</Resume>
+        </div>
+        <div>
+          <HamBtn onClick={() => setIsMenuOpen(!isMenuOpen)} onKeyDown={() => setIsMenuOpen(!isMenuOpen)} aria-label="Open Menu"><Hamburger /></HamBtn>
         </div>
       </Nav>
     </Head>
@@ -61,20 +53,12 @@ const Head = styled.header`
 
 const Nav = styled.nav`
   ${Flex({ ai: 'center', jc: 'space-around' })};
-  background: transparent;
-  
-  a {
-    font: 600 24px 'Quicksand', sans-serif;
-    color: white;
-    padding: 0 18px;
-    & :hover {
-      border-bottom: 3px solid ${props => props.theme.tagLineColor};
-    }
-  }
+  /* background-color: ${props => props.theme.pageBackground}; */
+  /* height: 13vh; */
 `;
 
 const Img = styled.img`
-  width: 60px;
+  width: 100px;
   border-radius: 50%;
 `;
 
@@ -86,13 +70,16 @@ const List = styled.ul`
 
   li {
     list-style-type: none;
-    border-right: 2px solid white;
   }
 
-`;
-
-const NavItem = styled(Link)`
-  color: white;
+  a {
+    font: 600 24px 'Quicksand', sans-serif;
+    color: ${props => props.theme.fontColor};
+    padding: 0 18px;
+    & :hover {
+      border-bottom: 3px solid ${props => props.theme.tagLineColor};
+    }
+  }
 `;
 
 const Resume = styled.a`

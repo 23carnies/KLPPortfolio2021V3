@@ -6,7 +6,6 @@ import { useSpring, animated } from 'react-spring';
 import './menu.css';
 
 const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const menuAnime = useSpring({
     transform: isMenuOpen
       ? `translate3d(0,0,0) scale(1)`
@@ -17,27 +16,27 @@ const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
   return (
     <animated.div style={menuAnime} className="nav-wrapper">
       <NavWrapper >
-        <CloseBtn onClick={toggleMenu} onKeyDown={toggleMenu} aria-label="Close Menu">
+        <CloseBtn onClick={() => setIsMenuOpen(!isMenuOpen)} onKeyDown={() => setIsMenuOpen(!isMenuOpen)} aria-label="Close Menu">
           <Close />
         </CloseBtn>
         <List>
           <li>
-            <NavItem onClick={toggleMenu}  onKeyDown={toggleMenu} to="/#about">
+            <NavItem onClick={() => setIsMenuOpen(!isMenuOpen)}  onKeyDown={() => setIsMenuOpen(!isMenuOpen)} to="/#about">
               About
             </NavItem>
           </li>
           <li>
-            <NavItem onClick={toggleMenu}  onKeyDown={toggleMenu} to="/#projects">
+            <NavItem onClick={() => setIsMenuOpen(!isMenuOpen)}  onKeyDown={() => setIsMenuOpen(!isMenuOpen)} to="/#projects">
               Projects
             </NavItem>
           </li>
           <li>
-            <NavItem onClick={toggleMenu}  onKeyDown={toggleMenu} to="/#talks">
+            <NavItem onClick={() => setIsMenuOpen(!isMenuOpen)}  onKeyDown={() => setIsMenuOpen(!isMenuOpen)} to="/#talks">
               Talks
             </NavItem>
           </li>
           <li>
-            <NavItem onClick={toggleMenu}  onKeyDown={toggleMenu} to="/#contact">
+            <NavItem onClick={() => setIsMenuOpen(!isMenuOpen)}  onKeyDown={() => setIsMenuOpen(!isMenuOpen)} to="/#contact">
               Contact
             </NavItem>
           </li>

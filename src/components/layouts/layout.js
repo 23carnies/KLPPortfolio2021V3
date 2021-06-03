@@ -9,18 +9,15 @@ import '@fontsource/josefin-sans';
 import Header from './header';
 import Footer from './footer';
 import Menu from './menu';
+import Intro from '../sections/intro';
 
-const Layout = (props) => {
-  const { children, theme, setTheme } = props;
+const Layout = ({ children }) => {
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
   
   
 
   return (
     <>
-      {/* <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}  theme={theme} setTheme={setTheme} />
-      <Menu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} /> */}
       <main>{children}</main>
       <Footer />
     </>

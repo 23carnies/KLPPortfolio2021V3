@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Section } from '../layouts/section';
+import Menu from '../layouts/menu'
 import { below, Flex } from '../utilities';
 import { Heading, SubHeading } from '../elements/headings';
 import styled from 'styled-components';
@@ -9,9 +10,12 @@ import { Css3, Dot, JavaScript, ReactLogo, StyledComponents, W3c } from '../util
 import Header from '../layouts/header';
 
 const Intro = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <SectionIntro>
-      <Header />
+      <Header setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
+      <Menu setIsMenuOpen={setIsMenuOpen} isMenuOpen={isMenuOpen} />
         <TextBox>
           <Headline>Hi! I'm Karen</Headline>
           <SubHeadLine>
