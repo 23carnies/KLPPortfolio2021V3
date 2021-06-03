@@ -5,5 +5,5 @@ link: 'https://youtu.be/lZVY2uoSjT8'
 alt: ''
 video: 'https://www.youtube.com/embed/lZVY2uoSjT8'
 ---
-Short explanation of React Storybook and its use in creating a gallery for the t.ux design library. 
+Short explanation of Storybook and its use in creating a gallery for the t.ux design library. 
 
