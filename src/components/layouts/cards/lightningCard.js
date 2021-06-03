@@ -25,8 +25,8 @@ export default LightningCard;
 
 const Card = styled.div`
   ${Flex({ fd: 'column' })};
-  width: 560px;
-  border-radius: 12px;
+  width: 400px;
+  border-radius: 8px;
   margin: 25px;
   border: 1px solid ${pinkBlack};
   ${below.xSmall`
@@ -40,14 +40,14 @@ const Card = styled.div`
 
 const Video = styled.iframe`
   aspect-ratio: 4/3;
-  width: 560px;
+  width: 400px;
   /* height: 315px; */
   border: none;
-  border-radius: 12px 12px 0 0;
-  ${below.xSmall`
+  border-radius: 8px 8px 0 0;
+  /* ${below.xSmall`
       width: 400px;
       // height: 300px;
-    `}
+    `} */
   ${below.xXSmall`
       width: 360px;
 
@@ -55,15 +55,15 @@ const Video = styled.iframe`
 `;
 
 const CardBody = styled.div`
-  background-color: ${darkGrey};
-  height: 220px;
-  ${below.small`
+  /* background-color: ${darkGrey}; */
+  /* height: 220px; */
+  /* ${below.small`
       height: 200px;
-    `};
+    `}; */
 `;
 
 const Title = styled(HTwo)`
-  font: 700 30px 'Josefin Sans', sans-serif;
+  font: 700 28px 'Josefin Sans', sans-serif;
   margin-top: 4%;
   ${below.small`
       margin-top: 3%;
@@ -74,5 +74,6 @@ const Title = styled(HTwo)`
 `;
 
 const Descrip = styled(Pgraph)`
-  padding: 1%;
+  font-size: 18px;
+  margin: 5px;
 `;
