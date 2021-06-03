@@ -4,7 +4,7 @@ sub: 'Large Scale Front End Development'
 tech: 
   - React.js
   - Styled Components
-image: 'https://i.imgur.com/P0dkuGz.png'
+image: 'https://i.imgur.com/N4OyyKE.png'
 openLink: 'https://tux-staging.herokuapp.com/login'
 gitLink: 'https://github.com/23carnies/tux'
 alt: 'Logo for product pronounced Tux'

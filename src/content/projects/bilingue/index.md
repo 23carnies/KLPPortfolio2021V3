@@ -7,7 +7,7 @@ tech:
   - AWS-SDK
   - PostgreSQL
   - CSS
-image: 'https://i.imgur.com/TKIM2hY.png'
+image: 'https://i.imgur.com/eRlZJba.png'
 openLink: 'https://bilingue-skills.herokuapp.com/'
 gitLink: 'https://github.com/23carnies/bilingue'
 alt: 'Logo for bilingüe app'
