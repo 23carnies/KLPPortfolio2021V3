@@ -22,7 +22,7 @@ const Intro = () => {
             I am a software engineer based in Atlanta, focused on Front End design
             in <b>ReactJS</b>, <b>useability</b>, and <b>accessability</b>.
           </SubHeadLine>
-        <See href="/projects">See My Work</See>
+        <See href="/#projects">See My Work</See>
         </TextBox>
         <LogosBox>
           <ReactLogo/>
