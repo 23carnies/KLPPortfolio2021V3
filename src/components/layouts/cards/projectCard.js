@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { Btn } from '../../elements/buttons';
 
 import { Flex, below, grey, pinkBlack, white, darkGrey, background } from '../../utilities';
+import { SmGithub, SmOpen } from '../../utilities/Icons';
 
 const ProjectCard = ({
   title,
@@ -52,7 +53,7 @@ const ProjectCard = ({
               rel="noreferrer"
               alt="opens new window to "
             >
-              Open
+              Open <SmOpen />
             </Btn>
             <Btn
               href={gitLink}
@@ -60,7 +61,7 @@ const ProjectCard = ({
               rel="noreferrer"
               alt="opens new window to "
             >
-              Github
+              Github <SmGithub />
             </Btn>
           </div>
         </CardBack>

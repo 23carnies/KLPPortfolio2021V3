@@ -7,17 +7,31 @@ import { BiMailSend } from '@react-icons/all-files/bi/BiMailSend';
 import { GiHamburgerMenu } from '@react-icons/all-files/gi/GiHamburgerMenu';
 import { BiMoon } from '@react-icons/all-files/bi/BiMoon';
 import { FiSun } from '@react-icons/all-files/fi/FiSun';
-import { FaReact } from '@react-icons/all-files/fa/FaReact'
-import { SiCss3 } from '@react-icons/all-files/si/SiCss3'
-import { SiW3C } from '@react-icons/all-files/si/SiW3C'
-import { SiJavascript } from '@react-icons/all-files/si/SiJavascript'
-import { SiStyledComponents } from '@react-icons/all-files/si/SiStyledComponents'
-import { SiGraphql } from '@react-icons/all-files/si/SiGraphql'
-import { BsDot } from '@react-icons/all-files/bs/BsDot'
+import { FaReact } from '@react-icons/all-files/fa/FaReact';
+import { SiCss3 } from '@react-icons/all-files/si/SiCss3';
+import { SiW3C } from '@react-icons/all-files/si/SiW3C';
+import { SiJavascript } from '@react-icons/all-files/si/SiJavascript';
+import { SiStyledComponents } from '@react-icons/all-files/si/SiStyledComponents';
+import { SiGraphql } from '@react-icons/all-files/si/SiGraphql';
+import { BsDot } from '@react-icons/all-files/bs/BsDot';
+import { IoIosSend } from '@react-icons/all-files/io/IoIosSend';
+import { IoIosOpen } from '@react-icons/all-files/io/IoIosOpen';
 
 import { IconContext } from '@react-icons/all-files/';
 import { white, box_shadow2, Flex, below } from '../utilities';
 import styled, { css } from 'styled-components';
+
+//Send
+export const Send = () => {
+  return (
+    <IconContext.Provider
+      value={{ size: '15px', color: `${white}` }}
+    >
+      <IoIosSend />
+    </IconContext.Provider>
+  );
+};
+
 
 //Hamburger and X
 export const Close = () => {
@@ -67,6 +81,13 @@ export const LgGithub = () => {
     </IconContext.Provider>
   );
 };
+export const SmGithub = () => {
+  return (
+    <IconContext.Provider value={{ size: '15px', color: `${white}` }}>
+        <FiGithub />
+    </IconContext.Provider>
+  );
+};
 export const LgLinkedIn = () => {
   return (
     <IconContext.Provider value={{ size: '45px', color: `${white}` }}>
@@ -91,6 +112,13 @@ export const LgMail = () => {
       <IconCircle>
         <BiMailSend />
       </IconCircle>
+    </IconContext.Provider>
+  );
+};
+export const SmOpen = () => {
+  return (
+    <IconContext.Provider value={{ size: '15px', color: `${white}` }}>
+        <IoIosOpen />
     </IconContext.Provider>
   );
 };
