@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { box_shadow1, box_shadow4, pink, white, pinkBlack } from '../utilities';
+import { box_shadow1, box_shadow4, pink, white, background, box_shadow2, pinkBlack } from '../utilities';
 
 export const Btn = styled.a`
   width: 108px;
@@ -10,14 +10,15 @@ export const Btn = styled.a`
   border: 1px solid ${white};
   border-radius: 5px;
   font-weight: bold;
-  
+  border: 1px inset ${pinkBlack};
 
   color: ${white};
   background: ${pink};
 
   &:hover {
-    background: ${pinkBlack};
-    box-shadow: ${box_shadow1};
+    opacity: .8;
+    box-shadow: ${box_shadow2};
+    border: .05px inset ${pinkBlack};
   }
   transition: all 0.4s ease;
 `;
