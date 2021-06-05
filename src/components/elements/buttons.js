@@ -2,7 +2,10 @@ import styled from 'styled-components';
 import { box_shadow1, box_shadow4, pink, white, background, box_shadow2, pinkBlack } from '../utilities';
 
 export const Btn = styled.a`
-  width: 108px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 110px;
   height: 50px;
   margin: 10px;
   padding: 10px 20px;
