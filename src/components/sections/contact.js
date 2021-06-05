@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ContactMe from '../layouts/emailjs';
 import { Section } from '../layouts/section';
-import { title, below } from '../utilities';
+import { title, below, darkGrey } from '../utilities';
 import { SubHeading } from '../elements/headings';
 
 
@@ -29,4 +29,5 @@ const SubHeadLine = styled(SubHeading)`
   margin: 0 auto;
   text-align: center;
   padding: 2%;
+  color: ${darkGrey};
 `;
