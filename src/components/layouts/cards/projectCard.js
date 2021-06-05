@@ -45,7 +45,7 @@ const ProjectCard = ({
         <CardBack>
           <Pgraph>{description}</Pgraph>
           <Pgraph>{info}</Pgraph>
-          <div style={{ margin: 'auto 15px 35px' }}>
+          <div style={{ margin: 'auto 15px 35px', display: 'flex' }}>
             <Btn
               type="open"
               href={openLink}
