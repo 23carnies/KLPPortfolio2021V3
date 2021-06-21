@@ -10,6 +10,7 @@ const Footer = () => {
       <FootDiv>
         <LinkItem
           rel="noreferrer"
+          title="Github"
           target="_blank"
           href="https://github.com/23carnies"
           aria-label="Github logo, opens new window to Karen's Github page"
@@ -19,6 +20,7 @@ const Footer = () => {
         <Dot />
         <LinkItem
           rel="noreferrer"
+          title="LinkedIn"
           target="_blank"
           href="https://www.linkedin.com/in/karen-lobin-perkins/"
           aria-label="LinkedIn logo, opens new window to Karen's LinkedIn page"
@@ -28,6 +30,7 @@ const Footer = () => {
         <Dot />
         <LinkItem
           rel="noreferrer"
+          title="Resume"
           target="_blank"
           href="http://23carnies.com/karenLobinPerkinsRes.pdf"
           aria-label="link to Karen's resume in pdf format, opens new window"
