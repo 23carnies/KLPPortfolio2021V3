@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import '@fontsource/quicksand';
-import '@fontsource/rock-salt';
+import '@fontsource/lato';
 import '@fontsource/josefin-sans';
 
 // import { useStaticQuery, graphql } from "gatsby"

@@ -3,7 +3,7 @@ import { below, above, darkGrey, pinkBlack, pink } from '../utilities';
 
 export const Heading = styled.h1`
   color: ${darkGrey};
-  font: 700 3.5rem 'Quicksand', sans-serif;
+  font: 700 3.5rem 'Josephin Sans', sans-serif;
   ${above.large`
     font-size: 4.5rem;
     `}
@@ -19,9 +19,9 @@ export const Heading = styled.h1`
 
 export const SubHeading = styled.h2`
   color: ${pink};
-  font: 700 28px 'Quicksand', sans-serif;
-  line-height: 1.4;
+  font-size: 1.8rem;
   padding: 0 3%;
+  margin: 0;
   ${below.small`
     font-size: 24px;
   `}
