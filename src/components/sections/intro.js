@@ -66,7 +66,7 @@ const Headline = styled(Heading)`
   color: white;
   font-weight: 700;
   text-align: left;
-  
+  margin: 0;
   
 `;
 const SubHeadLine = styled(SubHeading)`
@@ -74,8 +74,12 @@ const SubHeadLine = styled(SubHeading)`
   color: white;
   text-align: left;
   padding: 0;
+  line-height: 2rem;
+  margin: 0 0 20px 0;
   ${below.small`
-
+    line-height: 1.5rem;
+    margin: 10px 0;
+    font-size: 20px;
   `}
 `;
 
@@ -90,10 +94,8 @@ const TextBox = styled.div`
 `;
 
 const LogosBox = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 2% 1%;
+  ${Flex};
+  padding: 1%;
   margin: 2% auto;
   max-width: 80%;
 `;
