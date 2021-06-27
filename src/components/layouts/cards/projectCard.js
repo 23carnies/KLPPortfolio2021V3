@@ -96,7 +96,7 @@ export const Image = styled.img`
 `;
 
 export const Pgraph = styled.p`
-  font: 400 20px 'Quicksand', sans-serif;
+  font: 400 20px 'Lato', sans-serif;
   text-align: center;
   line-height: 24px;
   margin: 30px 5px 5px;

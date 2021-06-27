@@ -7,7 +7,7 @@ html {
   font-size: 62.5%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em 'Quicksand', Helvetica, sans-serif;
+  font: 112.5%/1.45em 'Josephin Sans', Helvetica, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Lato', Helvetica, sans-serif;
+  font-family: 'Josephin Sans', Helvetica, sans-serif;
   font-weight: normal;
   background-color: ${white};
   font-kerning: normal;
@@ -31,17 +31,14 @@ a {
     color: inherit;
 }
 
-h1,h2,h3,h4,h5,h6 {
+/* h1,h2,h3,h4,h5,h6 {
   z-index: 10;
-  font: 700 'Quicksand', Helvetica, sans-serif;
-  line-height: 1.3;
+  font: 700 'Josephin Sans', Helvetica, sans-serif;
   color: ${pinkBlack};
-  text-align: center;
 }
 p, a {
   font: 400 'Lato', Helvetica, sans-serif;
   line-height: 1.3;
-  /* margin-bottom: 1rem; */
 }
 
 h1 {
@@ -58,7 +55,7 @@ h4 {font-size: 2.25rem;}
 
 h5 {font-size: 1.5rem;}
 
-small, .text_small {font-size: 0.667rem;}
+small, .text_small {font-size: 0.667rem;} */
 
 b,
 strong {
