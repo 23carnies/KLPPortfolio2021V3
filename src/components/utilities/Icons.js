@@ -25,7 +25,7 @@ import styled, { css } from 'styled-components';
 export const Send = () => {
   return (
     <IconContext.Provider
-      value={{ size: '15px', color: `${white}` }}
+      value={{ size: '25px', color: `${white}` }}
     >
       <IoIosSend />
     </IconContext.Provider>

@@ -1,11 +1,12 @@
-import styled from 'styled-components';
-import { box_shadow1, box_shadow4, pink, white, background, box_shadow2, pinkBlack } from '../utilities';
+import styled, {css} from 'styled-components';
+import { box_shadow1, box_shadow4, pink, white, background, box_shadow2, pinkBlack, Flex } from '../utilities';
 
 export const Btn = styled.a`
-  display: flex;
+${Flex({ai:'center',jc:'center'})}
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 110px;
+  justify-content: space-between; */
+  width: 120px;
   height: 50px;
   margin: 10px;
   padding: 10px 20px;

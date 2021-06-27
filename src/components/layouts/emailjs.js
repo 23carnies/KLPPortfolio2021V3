@@ -65,7 +65,7 @@ export default function ContactMe() {
         required
         placeholder="Hello..."
       />
-      <Btn><Input type="submit" value="Send" /><Send /></Btn>
+      <SendBtn><Input type="submit" value="Send" /><Send /></SendBtn>
     </Form>
   );
 }
@@ -83,8 +83,8 @@ const Input = styled.input`
   border: ${({type}) => (type === 'submit' ? 'none' : `1px inset ${pinkBlack}`)};
   color: ${({type}) => (type === 'submit' ? `${white}` : `${pinkBlack}`)};
   font: ${label};
-  padding: 1%;
-  margin: 1.23%;
+  padding: ${({type}) => (type === 'submit' ? '0' : `1%`)};
+  margin: ${({type}) => (type === 'submit' ? `-4px` : `1.23%`)};
   border-radius: 5px;
   ${above.medium`
     font-size: 1.2rem;
@@ -135,4 +135,9 @@ const Label = styled.label`
   ${below.medium`
       font: ${smLabel};
     `}
+`;
+
+const SendBtn = styled(Btn)`
+  padding: 25px 10px;
+  width: 130px;
 `;
