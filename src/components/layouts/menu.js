@@ -41,6 +41,11 @@ const Menu = ({ isMenuOpen, setIsMenuOpen }) => {
               Contact
             </NavItem>
           </li>
+          <li>
+            <NavItem onClick={() => setIsMenuOpen(!isMenuOpen)}  onKeyDown={() => setIsMenuOpen(!isMenuOpen)} href="/resume.pdf">
+              Resume
+            </NavItem>
+          </li>
         </List>
 
       </NavWrapper>
@@ -68,13 +73,26 @@ const List = styled.ul`
 
 export const NavItem = styled(Link)`
   text-decoration: none;
-  font: 36px 'Quicksand', sans-serif;
+  font: 36px 'Lato', sans-serif;
+  padding: 10px;
+  margin: 20px 0; 
+  color: ${darkGrey};
+
+  & :hover {
+    background: rgba(255,255,255,0.2);
+    border-radius: 60px;
+    transition: 150ms ease-in-out;
+  }
+`;
+
+export const Resume = styled.a`
+  text-decoration: none;
+  font: 36px 'Lato', sans-serif;
   padding: 15px 0;
   margin: 80px auto;
   color: ${darkGrey};
 
   & :hover {
-    border-bottom: 3px solid ${pink}
+    background: rgba(255,255,255,0.2);
   }
 `;
-

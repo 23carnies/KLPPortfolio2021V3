@@ -30,10 +30,10 @@ const Header = ({ setIsMenuOpen, isMenuOpen }) => {
           <li>
             <Link to="/#contact">Contact</Link>
           </li>
+          <li>
+          <Link href="/resume.pdf">Résumé</Link>
+          </li>
         </List>
-        <div>
-          <Resume href="/resume.pdf">Résumé</Resume>
-        </div>
         <div>
           <HamBtn onClick={() => setIsMenuOpen(!isMenuOpen)} onKeyDown={() => setIsMenuOpen(!isMenuOpen)} aria-label="Open Menu"><Hamburger /></HamBtn>
         </div>
@@ -46,12 +46,13 @@ export default Header;
 
 const Head = styled.header`
   top: 0;
-  width: 100%;
   z-index: 15;
+  
 `;
 
 const Nav = styled.nav`
-  ${Flex({ ai: 'center', jc: 'space-around' })};
+  ${Flex({ ai: 'center', jc:'space-between' })};
+  /* max-width: 1200px; */
 `;
 
 const Img = styled.img`
@@ -61,31 +62,38 @@ const Img = styled.img`
 
 const List = styled.ul`
   ${Flex};
+  /* margin-left: 60%; */
   ${below.medium`
         display: none;
     `}
 
   li {
     list-style-type: none;
+    margin: .2%;
   }
 
   a {
-    font: 600 24px 'Quicksand', sans-serif;
+    font: 600 18px 'Josephin Sans', sans-serif;
     color: ${white};
     padding: 0 18px;
     & :hover {
-      border-bottom: 3px solid ${pink};
+      background: rgba(255,255,255,0.2);
+      padding: 15px;
+      border-radius: 60px;
     }
   }
 `;
 
 const Resume = styled.a`
-  font: 600 24px 'Quicksand', sans-serif;
+  font: 600 24px 'Lato', sans-serif;
   color: ${white};
   padding: 0 18px;
 
   & :hover {
-    border-bottom: 3px solid ${white};
+    background: rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 60px;
+    transition: 150ms;
   }
 `;
 
