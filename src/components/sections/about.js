@@ -9,30 +9,31 @@ const About = () => {
   return (
     <Section id="about">
       <Box>
-        <SubHeading>About</SubHeading>
+        <Title>About</Title>
         <Hr />
         <InnerBox>
           <Img src={Iceland} alt="Karen in Iceland" />
-          <div style={{ display: 'flex', flexDirection: 'column', padding: '5%' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', padding: '0 5%' }}>
             <AboutText>
               From my earliest memories, I’ve always loved to learn. I taught
               myself to play guitar and built a car from scratch with my father
               as a teenager. I enjoy DIYing and cooking, both allowing my
-              creative side to flourish. I’ve studied multiple human languages
+              creative side to flourish. I’ve studied multiple languages (spoken and written)
               and I picked up HTML and CSS in college. For years I built sites
               for family and friends until deciding to pivot my career to
-              software development.{' '}
+              software development.
             </AboutText>
             <AboutText>
-              A recent graduate of the Software Engineering Immersive at General
-              Assembly, I am experienced in modern web design. Skilled in pure
-              CSS and several frameworks, I build alluring sites and apps with
+              I am passionate about modern web design. I excel at front end design in pure
+              CSS, ReactJS, and vanilla JavaScript. On the back end, I work in Node.js and am adept 
+              with REST and GraphQL APIs. I build alluring sites and apps with
               great functionality.
+
             </AboutText>
             <AboutText>
-              I have a passion for rowing, a sport of focus and dedication. I
-              bring these skills with me to every project. With a fondness for
-              spoken languages, travel, and fitness, I want to see the world;
+              I have a keenness for rowing, a sport of focus and dedication. I
+              bring these skills with me to every coding project I develop. With a fondness for
+               travel, and fitness, I want to see the world
               and see what positive change I can be in it.
             </AboutText>
           </div>
@@ -43,6 +44,10 @@ const About = () => {
 };
 
 export default About;
+
+const Title = styled(SubHeading)`
+  margin-top: 20px;
+`;
 
 const Box = styled.div`
   ${Flex({ fd: 'column' })}
@@ -60,7 +65,7 @@ const InnerBox = styled.div`
 `;
 
 const Img = styled.img`
-  width: 50%;
+  width: 25%;
   max-width: 500px;
   border-radius: 50%;
   border: 1px solid ${darkGrey};
@@ -71,7 +76,7 @@ const Img = styled.img`
 `;
 
 const AboutText = styled.p`
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   line-height: 36px;
   padding: 0 1%;
   ${below.xLarge`
