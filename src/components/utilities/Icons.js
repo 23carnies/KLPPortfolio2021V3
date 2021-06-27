@@ -18,7 +18,7 @@ import { IoIosSend } from '@react-icons/all-files/io/IoIosSend';
 import { IoIosOpen } from '@react-icons/all-files/io/IoIosOpen';
 
 import { IconContext } from '@react-icons/all-files/';
-import { white, box_shadow2, Flex, below } from '../utilities';
+import { white, box_shadow2, Flex, below, pinkBlack } from '../utilities';
 import styled, { css } from 'styled-components';
 
 //Send
@@ -37,7 +37,7 @@ export const Send = () => {
 export const Close = () => {
   return (
     <IconContext.Provider
-      value={{ size: '30px', color: `${white}` }}
+      value={{ size: '30px', color: `${pinkBlack}` }}
     >
       <AiOutlineClose />
     </IconContext.Provider>
