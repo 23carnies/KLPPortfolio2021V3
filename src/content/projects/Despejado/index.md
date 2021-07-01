@@ -10,5 +10,5 @@ openLink: 'http://despejado.surge.sh/'
 gitLink: 'https://github.com/23carnies/despejado'
 alt: 'Screenshot of Despejado app'
 info: ''
+other: 'A bilingual weather app built in React, utilizing two APIs and designed in Sass.'
 ---
-A bilingual weather app built in React, utilizing two APIs and designed in Sass. 

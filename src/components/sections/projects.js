@@ -21,8 +21,8 @@ const Projects = () => {
               sub
               tech
               title
+              other
             }
-            excerpt
           }
         }
       }
@@ -42,7 +42,7 @@ const Projects = () => {
       <CardGroup>
         {highlights &&
           highlights.map(({ node }, idx) => {
-            const { excerpt, frontmatter } = node;
+            const { frontmatter } = node;
             const {
               alt,
               gitLink,
@@ -52,13 +52,14 @@ const Projects = () => {
               sub,
               tech,
               title,
+              other,
             } = frontmatter;
             return (
               <ProjectCard
                 key={idx}
                 title={title}
                 sub={sub}
-                description={excerpt}
+                description={other}
                 image={image}
                 openLink={openLink}
                 gitLink={gitLink}
