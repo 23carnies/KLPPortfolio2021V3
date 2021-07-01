@@ -56,7 +56,7 @@ const Video = styled.iframe`
 
 const CardBody = styled.div`
   /* background-color: ${darkGrey}; */
-  /* height: 220px; */
+  height: 150px;
   /* ${below.small`
       height: 200px;
     `}; */
@@ -64,6 +64,7 @@ const CardBody = styled.div`
 
 const Title = styled(HTwo)`
   font: 700 28px 'Josefin Sans', sans-serif;
+  text-align: center;
   margin-top: 4%;
   ${below.small`
       margin-top: 3%;
