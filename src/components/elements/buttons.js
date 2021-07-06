@@ -2,10 +2,7 @@ import styled, {css} from 'styled-components';
 import { box_shadow1, box_shadow4, pink, white, background, box_shadow2, pinkBlack, Flex } from '../utilities';
 
 export const Btn = styled.a`
-${Flex({ai:'center',jc:'center'})}
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
+${Flex({ai:'center',jc:'space-between'})}
   width: 120px;
   height: 50px;
   margin: 10px;
