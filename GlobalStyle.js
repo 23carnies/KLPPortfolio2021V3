@@ -31,32 +31,6 @@ a {
     color: inherit;
 }
 
-/* h1,h2,h3,h4,h5,h6 {
-  z-index: 10;
-  font: 700 'Josephin Sans', Helvetica, sans-serif;
-  color: ${pinkBlack};
-}
-p, a {
-  font: 400 'Lato', Helvetica, sans-serif;
-  line-height: 1.3;
-}
-
-h1 {
-  margin: 3rem 0 1.38rem;
-  margin-top: 0;
-  font-size: 7.6rem;
-}
-
-h2 {font-size: 5rem;}
-
-h3 {font-size: 3.4rem;}
-
-h4 {font-size: 2.25rem;}
-
-h5 {font-size: 1.5rem;}
-
-small, .text_small {font-size: 0.667rem;} */
-
 b,
 strong {
   font-weight: inherit;
