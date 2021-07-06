@@ -14,9 +14,7 @@ const Header = ({ setIsMenuOpen, isMenuOpen }) => {
   return (
     <Head>
       <Nav>
-        <div>
-          <Link to="/"><Img src={Logo} alt="KLP logo" /></Link>
-        </div>
+        <Img src={Logo} alt="KLP logo" />
         <List>
           <li>
             <Link to="/#about">About</Link>
@@ -47,22 +45,57 @@ export default Header;
 const Head = styled.header`
   top: 0;
   z-index: 15;
+  padding: 0 10%;
   
 `;
 
 const Nav = styled.nav`
-  ${Flex({ ai: 'center', jc:'space-between' })};
+  ${Flex};
   /* max-width: 1200px; */
 `;
 
 const Img = styled.img`
   width: 100px;
   border-radius: 50%;
+  margin-left: -70%;
+  ${above.xXLarge`
+    margin-left: -120%;
+  `}
+  ${below.xXLarge`
+    margin-left: -100%;
+  `}
+  ${below.xLarge`
+    margin-left: -70%;
+  `}
+  ${below.large`
+    margin-left: -50%;
+  `}
+  ${below.medium`
+    margin-left: -800%;
+  `}
+  ${below.small`
+    margin-left: -550%;
+  `}
+  ${below.xXSmall`
+    display: none;
+  `}
 `;
 
 const List = styled.ul`
   ${Flex};
-  /* margin-left: 60%; */
+  margin-left: 70%;
+  ${above.xXLarge`
+    margin-left: 120%
+  `}
+  ${below.xXLarge`
+    margin-left: 100%
+  `}
+  ${below.xLarge`
+    margin-left: 70%
+  `}
+  ${below.large`
+    margin-left: 50%
+  `}
   ${below.medium`
         display: none;
     `}
@@ -100,7 +133,11 @@ const Resume = styled.a`
 const HamBtn = styled.button`
   border: none;
   background: transparent;
+  margin-left: 1300%;
   ${above.medium`
     display: none;
+  `}
+  ${below.small`
+    margin-left: 900%;
   `}
 `;

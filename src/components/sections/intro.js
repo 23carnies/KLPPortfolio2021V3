@@ -45,10 +45,13 @@ const SectionIntro = styled(Section)`
   width: 100vw;
   background: radial-gradient(101.23% 226.86% at 105.57% 106.78%, rgba(183, 0, 139, 0.34) 10.42%, rgba(160, 22, 168, 0.958021) 84.25%), linear-gradient(123.03deg, rgba(255, 202, 67, 0.6) 6.71%, rgba(255, 211, 97, 0) 52.29%), #E76F2B;
   mix-blend-mode: multiply;
-  ${Flex({fd:'column'})};
+  ${Flex({fd:'column', ai:'flex-end'})};
   padding-bottom: 2%;
   ${below.small`
     ${Flex({fd:'column', ai:'flex-end'})};
+  `}
+  ${below.xXSmall`
+    padding-bottom: 5%;
   `}
 `;
 
@@ -94,8 +97,8 @@ const TextBox = styled.div`
 `;
 
 const LogosBox = styled.div`
-  ${Flex};
-  padding: 1%;
-  margin: 2% auto;
-  max-width: 80%;
+  padding: 3% 10%;
+  ${below.xXSmall`
+    display: none;
+  `}
 `;
