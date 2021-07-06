@@ -34,8 +34,11 @@ const ProjectCard = ({
       >
         <CardFront>
           <Image src={image} alt={alt} />
-          <HTwo>{title}</HTwo>
-          <HThree>{sub}</HThree>
+          <TextBox>
+            <HTwo>{title}</HTwo>
+            <HThree>{sub}</HThree>
+
+          </TextBox>
         </CardFront>
       </animated.div>
 
@@ -45,7 +48,7 @@ const ProjectCard = ({
         <CardBack>
           <Pgraph>{description}</Pgraph>
           <Pgraph>{info}</Pgraph>
-          <div style={{ margin: 'auto 15px 35px', display: 'flex' }}>
+          <BtnBox>
             <Btn
               type="open"
               href={openLink}
@@ -63,7 +66,7 @@ const ProjectCard = ({
             >
               Github <SmGithub />
             </Btn>
-          </div>
+          </BtnBox>
         </CardBack>
       </animated.div>
     </div>
@@ -73,7 +76,7 @@ const ProjectCard = ({
 export default ProjectCard;
 
 export const CardFront = styled.div`
-  ${Flex({ fd: 'column' })};
+  ${Flex({ fd: 'column',jc:'flex-start' })};
   margin: 3%;
   width: 500px;
   height: 500px;
@@ -87,11 +90,10 @@ export const CardFront = styled.div`
 `;
 
 export const CardBack = styled(CardFront)`
-
 `;
 
 export const Image = styled.img`
-  width: 85%;
+  width: 100%;
   border-radius: 5px;
 `;
 
@@ -99,17 +101,32 @@ export const Pgraph = styled.p`
   font: 400 20px 'Lato', sans-serif;
   text-align: center;
   line-height: 24px;
-  margin: 30px 5px 5px;
+  margin: 30px;
   color: ${darkGrey};
+`;
+
+export const TextBox = styled.div`
+  margin: -100px;
+  z-index: 50;
+  background: radial-gradient(101.23% 226.86% at 105.57% 106.78%, rgba(183, 0, 139, 0.34) 10.42%, rgba(160, 22, 168, 0.958021) 84.25%), linear-gradient(123.03deg, rgba(255, 202, 67, 0.6) 6.71%, rgba(255, 211, 97, 0) 52.29%), #E76F2B;
+  width: 100%;
 `;
 
 export const HTwo = styled.h2`
   font: 700 20px 'Roboto Mono', monospace;
-  margin: 5px;
-  color: ${pinkBlack};
+  color: ${white};
+  text-align: center;
+  margin-bottom: 5px;
 `;
 
 export const HThree = styled.h3`
   font: 400 18px 'Lato', Helvetica, sans-serif;
-  margin: 0;
+  text-align: center;
+  margin-top: 5px;
+  color: ${white};
+`;
+
+export const BtnBox = styled.div`
+  margin: auto 35px 15px;
+  ${Flex};
 `;
